@@ -1,5 +1,9 @@
 #!/bin/bash
 
+
+# Take the root access 
+sudo su -
+
 # Installing mysql database package
 dnf install mysql-server -y
 
