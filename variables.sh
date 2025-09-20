@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# Please enter your passwaord 
+echo "Please enter your passwaord" 
 read PIN_NUMBER
 
 echo "Entered PIN is: $PIN_NUMBER"
