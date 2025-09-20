@@ -9,4 +9,4 @@ echo "Current dierectory: $PWD"
 
 
 leaders=("modi" "putin" "trump")
-echo "${leaders[@]}"
+echo "${leaders[0]}"
