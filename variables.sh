@@ -1,7 +1,10 @@
 #!/bin/bash
 
 
+# Please enter your passwaord 
+read PIN_NUMBER
 
+echo "Entered PIN is: $PIN_NUMBER"
 person1=$1
 person2=$2
 
