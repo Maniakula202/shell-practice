@@ -23,7 +23,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]; then
         echo -e "Installing $2 ... $R FAILURE $N" | tee -a $LOG_FILE
     else
-        echo -e "Installing $2 ... $R SUCCESS $N" | tee -a $LOG_FILE
+        echo -e "Installing $2 ... $G SUCCESS $N" | tee -a $LOG_FILE
     fi
 
 }
