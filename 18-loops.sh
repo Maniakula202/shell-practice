@@ -29,7 +29,7 @@ VALIDATE(){
 }
 
 
-for package in $a
+for package in $@
 do 
     dnf list installed $package &>> $LOG_FILE
 
