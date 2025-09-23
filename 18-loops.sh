@@ -14,23 +14,23 @@ fi
 dnf install mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing mysql ... $R FAILURE $N"
+    echo -e "Installing mysql ... $R FAILURE $N"
 else
-    echo "Installing mysql ... $R SUCCESS $N"
+    echo -e "Installing mysql ... $R SUCCESS $N"
 fi
 
 dnf install nginx -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing nginx ... $R FAILURE $N"
+    echo -e "Installing nginx ... $R FAILURE $N"
 else
-    echo "Installing nginx ... $R SUCCESS $N"
+    echo -e "Installing nginx ... $R SUCCESS $N"
 fi
 
 dnf install python3 -y
 
 if [ $? -ne 0 ]; then
-    echo "Installing python3 ... $R FAILURE $N"
+    echo -e "Installing python3 ... $R FAILURE $N"
 else
-    echo "Installing python3 ... $R SUCCESS $N"
+    echo -e "Installing python3 ... $R SUCCESS $N"
 fi
