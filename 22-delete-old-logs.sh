@@ -9,7 +9,7 @@ fi
 
 FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +14)
 
-for filepath in FILES_TO_DELETE
+for filepath in $FILES_TO_DELETE
 do
     echo "Deleting the file path: $filepath"
 done
