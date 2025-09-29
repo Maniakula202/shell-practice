@@ -47,6 +47,8 @@ fi
 ### Find the files ####
 FILES=$(find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS)
 
+echo "$FILES"
+
 
 if [ ! -z "${FILES}" ]; then
     ### Start Archeiving ###
