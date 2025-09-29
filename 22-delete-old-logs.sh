@@ -4,6 +4,7 @@ SOURCE_DIR=/home/ec2-user/app-logs
 
 if [ ! -d SOURCE_DIR ]; then
     echo "ERROR:: Source directory $SOURCE_DIR not present"
+    exit 1
 fi 
 
 LOG_FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
