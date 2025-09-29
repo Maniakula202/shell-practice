@@ -7,5 +7,9 @@ if [ ! -d $SOURCE_DIR ]; then
     exit 1
 fi 
 
-LOG_FILES=$(find $SOURCE_DIR -name "*.log" -mtime +14)
-echo "$LOG_FILES"
+FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -mtime +14)
+
+for filepath in FILES_TO_DELETE
+do
+    echo "Deleting the file path: $filepath"
+done
