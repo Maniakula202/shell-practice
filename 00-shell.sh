@@ -12,6 +12,7 @@ if [ ! -f $inputfile ]; then
     echo -e "$R Source directory $inputfile does not exits $N"
 else
     echo -e "$G Source directory $inputfile Existed $N"
+fi 
 
 if [ -r $inputfile ]; then
   echo "Directory is readable "
