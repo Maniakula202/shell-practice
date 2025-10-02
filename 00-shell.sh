@@ -1,5 +1,5 @@
 #!/bin/bash 
 
 
-outpu=df -h | awk '{print $5}'
-echo "$ouput"
+output=$(df -h | awk '{print $5}')
+echo "$output"
