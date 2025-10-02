@@ -2,13 +2,11 @@
 
 inputfile=$1
 
-
-if [ -d $inputfile ]; then 
+if [ -d "$inputfile" ]; then 
     echo "The given input path is directory"
-    cd $inpufile
+    cd "$inputfile"
     DIR_FILES=$(ls)
     echo "$DIR_FILES"
 else
     echo -e "$G Source directory $inputfile Existed $N"
-fi 
-
+fi
