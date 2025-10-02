@@ -8,7 +8,7 @@ N="\e[0m"
 inputfile=$1
 
 
-if [ ! -f $inputfile ]; then 
+if [ ! -e $inputfile ]; then 
     echo -e "$R Source directory $inputfile does not exits $N"
 else
     echo -e "$G Source directory $inputfile Existed $N"
